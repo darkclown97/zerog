@@ -1,0 +1,11 @@
+
+var  url = 'https://script.google.com/macros/s/AKfycbzn15suhpU0MrTKbRSO8j02HRQ_r1cAAL0EwsxmoJIC__BUnE4/exec'
+var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $('#form2').serializeObject(),
+	success:function(){
+		alert("form submitted");
+	}
+});
